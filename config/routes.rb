@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "pages#home"
   get "about" => "pages#about"
+  get "orders" => "pages#orders"
   get "faceSheet" => "pages#faceSheet"
   get "handP" => "pages#handP"
   get "labs" => "pages#labs"
