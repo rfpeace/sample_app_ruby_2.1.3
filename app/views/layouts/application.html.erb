@@ -8,15 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-
-
-
-		<!-- Header -->
-	<%= render 'layouts/header'%>
-	<!-- <%= link_to "Home", root_path %>
-	<%= link_to "About Us", about_path %> -->
+<!-- Header -->
+<%= render 'layouts/header'%>
+	
 	<div class="container">
+		    <!--For flash msg in Devise -->
+				<% flash.each do |name, msg| %>
+		     <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+				<% end %>
+		
 		<%= yield %>
 	</div>
 

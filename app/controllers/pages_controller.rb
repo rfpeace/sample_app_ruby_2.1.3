@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def home
   end
   
-  def about			
+  def imaging			
   end
   
   def orders

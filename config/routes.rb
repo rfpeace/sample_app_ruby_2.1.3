@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home"
-  get "about" => "pages#about"
+  get "imaging" => "pages#imaging"
   get "orders" => "pages#orders"
   get "faceSheet" => "pages#faceSheet"
   get "handP" => "pages#handP"
